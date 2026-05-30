@@ -1,0 +1,46 @@
+<div>
+    <title>lyrex</title>
+    <audio id="bgm" src="img/song.mp3" autoplay loop></audio>
+    <p>@belgianlinuxuser</p>
+</div>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@400&display=swap');
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-height: 100%;
+        background: transparent;
+    }
+    div {
+        font-family: 'Grenze Gotisch', regular;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-image: url('img/149259.jpg');
+        background-size: cover;
+        background-position: center;
+        color: rgb(255, 255, 255);
+        text-shadow: 0 2px 6px rgba(255, 255, 255, 0.8), 2px 2px 4px rgba(255,255,255,0.2);
+        box-shadow: 0 20px 40px rgba(255, 255, 255, 0.8)nset, 0 10px 30px rgba(0,0,0,0.6);
+    }
+    .text {
+        text-align: center;
+    }
+    title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    p {
+        font-size: 40px;
+    }
+</style>
+<script>
+document.addEventListener("click", () => {
+    const audio = document.getElementById("bgm");
+    audio.play();
+}, { once: true });
+</script>
